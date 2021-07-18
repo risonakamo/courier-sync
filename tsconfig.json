@@ -12,8 +12,7 @@
     },
     "include":[
         "**/*.ts",
-        "**/*.d.ts",
-        "web/*"
+        "**/*.d.ts"
     ],
     "exclude":[
         "node_modules"
