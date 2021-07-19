@@ -69,9 +69,9 @@ module.exports={
 
     resolve:{
         extensions:[".ts",".js",".svelte"],
-        // alias:{
-        //     top:`${__dirname}`
-        // }
+        alias:{
+            components:`${__dirname}/web/components`
+        }
     },
 
     stats:{
