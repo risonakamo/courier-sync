@@ -28,13 +28,13 @@ module.exports={
                 }
             },
             {
-				test:/\.svelte$/,
-				use:{
-				    loader:"svelte-loader",
+                test:/\.svelte$/,
+                use:{
+                    loader:"svelte-loader",
                     options:{
                         preprocess:SveltePreprocess()
                     }
-				}
+                }
             },
             {
                 test:/\.(less|css)$/,
