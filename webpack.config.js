@@ -8,7 +8,7 @@ module.exports={
     mode:"development",
     entry:{
         // add entry points here
-        index:"./web/main.ts"
+        index:"./web/index.ts"
     },
     output:{
         path:`${__dirname}/build`,
