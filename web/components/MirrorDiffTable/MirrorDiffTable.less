@@ -7,6 +7,13 @@
         vertical-align: top;
         align-items: center;
 
+        .slot
+        {
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
         &.status-col
         {
             width: 45px;
@@ -15,6 +22,11 @@
         &.name-col
         {
             flex: 1;
+
+            .icon-slot
+            {
+                width: 25px;
+            }
         }
 
         &.size-col
@@ -36,6 +48,12 @@
         {
             height: 30px;
             font-weight: 600;
+        }
+
+        &.item
+        {
+            height: 40px;
+            font-weight: 300;
         }
     }
 }

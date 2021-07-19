@@ -9,4 +9,25 @@
     <div class="col size-col">Size</div>
     <div class="col modified-col">Modified</div>
   </div>
+
+  <div class="row item">
+    <div class="col status-col"></div>
+    <div class="col name-col">
+      <div class="slot icon-slot">
+        <img src="/assets/temp_folderarrow.png" alt="folder-arrow"/>
+      </div>
+      <div class="slot icon-slot">
+        <img src="/assets/temp_folder.png" alt="folder"/>
+      </div>
+      <div class="slot name-slot">
+        folder
+      </div>
+    </div>
+    <div class="col size-col">
+
+    </div>
+    <div class="col modified-col">
+
+    </div>
+  </div>
 </div>
