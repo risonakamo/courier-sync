@@ -10,7 +10,9 @@
     modified:item.status=="modified",
     "error-modified":item.status=="errorModified",
     added:item.status=="added",
-    removed:item.status=="removed"
+    removed:item.status=="removed",
+
+    collapsed:!expanded
   };
 </script>
 
@@ -18,7 +20,7 @@
   <div class="col status-col"></div>
   <div class="col name-col">
     <div class="slot icon-slot folder-arrow">
-      <img src="/assets/temp_folderarrow2.png" alt="folder-arrow"/>
+      <img src="/assets/temp_folderarrow2.png" alt="folder-arrow" class="folder-arrow-icon"/>
     </div>
     <div class="slot icon-slot">
       <img src="/assets/temp_folder.png" alt="folder"/>

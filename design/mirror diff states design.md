@@ -5,7 +5,7 @@ states rows can be in
 - ~~modified (orange)~~
 - ~~added (green)~~
 - ~~removed (red)~~
-- folder collapsed state
+- ~~folder collapsed state~~
 - file row
 - indentation
 - status icon
@@ -13,3 +13,4 @@ states rows can be in
 # more changes
 - arrows showing the direction of change
 - highlight the problem in modified error state
+- open folder/closed folder
