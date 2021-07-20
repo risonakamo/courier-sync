@@ -10,7 +10,7 @@ interface MirrorItem
     modifiedDates:ValueDiff
 }
 
-type DiffStatus="normal"|"modifed"|"errorModified"|"added"|"removed"
+type DiffStatus="normal"|"modified"|"errorModified"|"added"|"removed"
 
 /** a change in a value */
 interface ValueDiff

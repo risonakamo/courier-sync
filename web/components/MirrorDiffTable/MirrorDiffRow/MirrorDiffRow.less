@@ -1,6 +1,9 @@
 // tempcolour
 @normal-hover-background: #ffeebf;
 
+@modified-text: #dad316;
+@modified-background: #f5d93f;
+
 .mirror-diff-table
 {
     .row
@@ -37,6 +40,17 @@
                 .folder-arrow
                 {
                     opacity: .9;
+                }
+            }
+
+            &.modified
+            {
+                color: @modified-text;
+                background: fade(@modified-background,5%);
+
+                &:hover
+                {
+                    background: fade(@modified-background,8%);
                 }
             }
         }

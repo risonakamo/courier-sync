@@ -19,6 +19,22 @@
         mirror:"2021/07/15 20:30",
         base:""
       }
+    },
+    {
+      name:"item 1",
+      folder:true,
+      level:0,
+
+      status:"modified",
+
+      modifiedSizes:{
+        mirror:"200.7 kb",
+        base:"5.0 mb"
+      },
+      modifiedDates:{
+        mirror:"2021/07/15 20:30",
+        base:"2021/07/15 20:40"
+      }
     }
   ];
 </script>
@@ -34,5 +50,7 @@
     <div class="col modified-col">Modified</div>
   </div>
 
-  <MirrorDiffRow item={sampleData[0]} expanded={true}/>
+  {#each sampleData as x}
+    <MirrorDiffRow item={x} expanded={true}/>
+  {/each}
 </div>

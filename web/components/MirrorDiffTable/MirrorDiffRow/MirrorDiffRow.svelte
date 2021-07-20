@@ -1,11 +1,17 @@
 <script lang="ts">
+  import cx from "classnames";
+
   import "./MirrorDiffRow.less";
 
   export var item:MirrorItem;
   export var expanded:boolean;
+
+  const topClass={
+    modified:item.status=="modified"
+  };
 </script>
 
-<div class="row item">
+<div class={cx("row item",topClass)}>
   <div class="col status-col"></div>
   <div class="col name-col">
     <div class="slot icon-slot folder-arrow">
