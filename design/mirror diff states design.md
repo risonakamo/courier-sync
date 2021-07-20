@@ -7,7 +7,7 @@ states rows can be in
 - ~~removed (red)~~
 - ~~folder collapsed state~~
 - ~~file row~~
-- indentation
+- ~~indentation~~
 - status icon
 
 # more changes

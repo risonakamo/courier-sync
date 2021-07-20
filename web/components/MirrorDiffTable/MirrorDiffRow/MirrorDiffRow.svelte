@@ -25,21 +25,30 @@
 
 <div class={cx("row item",topClass)}>
   <div class="col status-col"></div>
+
   <div class="col name-col">
+    {#each {length:item.level} as x}
+      <div class="slot icon-slot"></div>
+    {/each}
+
     <div class="slot icon-slot folder-arrow">
       {#if item.folder}
         <img src="/assets/temp_folderarrow2.png" alt="folder-arrow" class="folder-arrow-icon"/>
       {/if}
     </div>
+
     <div class="slot icon-slot">
       <img src={itemIcon} alt="folder"/>
     </div>
+
     <div class="slot name-slot">{item.name}</div>
   </div>
+
   <div class="col size-col">
     <div class="slot divide-slot">{item.modifiedSizes.mirror}</div>
     <div class="slot divide-slot">{item.modifiedSizes.base}</div>
   </div>
+
   <div class="col modified-col">
     <div class="slot divide-slot">{item.modifiedDates.mirror}</div>
     <div class="slot divide-slot">{item.modifiedDates.base}</div>
