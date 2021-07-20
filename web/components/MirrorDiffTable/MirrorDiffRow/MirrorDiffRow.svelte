@@ -7,7 +7,8 @@
   export var expanded:boolean;
 
   const topClass={
-    modified:item.status=="modified"
+    modified:item.status=="modified",
+    "error-modified":item.status=="errorModified"
   };
 </script>
 

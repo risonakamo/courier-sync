@@ -9,3 +9,7 @@ states rows can be in
 - file row
 - indentation
 - status icon
+
+# more changes
+- arrows showing the direction of change
+- highlight the problem in modified error state

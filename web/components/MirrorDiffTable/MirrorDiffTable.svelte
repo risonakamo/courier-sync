@@ -21,9 +21,9 @@
       }
     },
     {
-      name:"item 1",
-      folder:true,
-      level:0,
+      name:"ok modified item 1",
+      folder:false,
+      level:1,
 
       status:"modified",
 
@@ -34,6 +34,22 @@
       modifiedDates:{
         mirror:"2021/07/15 20:30",
         base:"2021/07/15 20:40"
+      }
+    },
+    {
+      name:"bad modified item 1",
+      folder:false,
+      level:1,
+
+      status:"errorModified",
+
+      modifiedSizes:{
+        mirror:"200.7 kb",
+        base:"5.0 mb"
+      },
+      modifiedDates:{
+        mirror:"2021/07/15 20:30",
+        base:"2021/07/15 20:00"
       }
     }
   ];
