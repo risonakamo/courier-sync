@@ -67,6 +67,22 @@
         mirror:"",
         base:"2021/07/15 20:00"
       }
+    },
+    {
+      name:"removed item",
+      folder:false,
+      level:1,
+
+      status:"removed",
+
+      modifiedSizes:{
+        mirror:"10 kb",
+        base:""
+      },
+      modifiedDates:{
+        mirror:"2021/07/15 20:00",
+        base:""
+      }
     }
   ];
 </script>

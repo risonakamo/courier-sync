@@ -4,7 +4,7 @@ states rows can be in
 - ~~modified (yellow)~~
 - ~~modified (orange)~~
 - ~~added (green)~~
-- removed (red)
+- ~~removed (red)~~
 - folder collapsed state
 - file row
 - indentation
