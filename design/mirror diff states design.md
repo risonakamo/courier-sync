@@ -8,7 +8,7 @@ states rows can be in
 - ~~folder collapsed state~~
 - ~~file row~~
 - ~~indentation~~
-- status icon
+- ~~status icon~~
 
 # more changes
 - arrows showing the direction of change

@@ -21,10 +21,28 @@
   {
     itemIcon="/assets/temp_file.png";
   }
+
+  var statusIcon:string="";
+
+  switch (item.status)
+  {
+    case "modified":
+    case "errorModified":
+    statusIcon="M";
+    break;
+
+    case "added":
+    statusIcon="+";
+    break;
+
+    case "removed":
+    statusIcon="-";
+    break;
+  }
 </script>
 
 <div class={cx("row item",topClass)}>
-  <div class="col status-col"></div>
+  <div class="col status-col">{statusIcon}</div>
 
   <div class="col name-col">
     {#each {length:item.level} as x}

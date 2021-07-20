@@ -22,6 +22,13 @@
                 opacity: .7;
             }
 
+            .status-col
+            {
+                justify-content: center;
+                font-size: 12px;
+                font-weight: 600;
+            }
+
             &:hover
             {
                 background: fade(#ffeebf,3%);
@@ -49,6 +56,14 @@
                 .folder-arrow-icon
                 {
                     transform: rotate(-90deg);
+                }
+            }
+
+            &.added,&.removed
+            {
+                .status-col
+                {
+                    font-size: 15px;
                 }
             }
         }
