@@ -2,6 +2,22 @@
   import MirrorDiffRow from "./MirrorDiffRow/MirrorDiffRow.svelte";
 
   import "./MirrorDiffTable.less";
+
+  const sampleData:MirrorItem[]=[
+    {
+      name:"folder",
+      folder:true,
+      status:"normal",
+      modifiedSizes:{
+        mirror:"200.7 kb",
+        base:""
+      },
+      modifiedDates:{
+        mirror:"2021/07/15 20:30",
+        base:""
+      }
+    }
+  ];
 </script>
 
 <div class="mirror-diff-table">
@@ -15,5 +31,5 @@
     <div class="col modified-col">Modified</div>
   </div>
 
-  <MirrorDiffRow/>
+  <MirrorDiffRow item={sampleData[0]} expanded={true}/>
 </div>
