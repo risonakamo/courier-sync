@@ -14,16 +14,25 @@
 
     collapsed:!expanded
   };
+
+  var itemIcon:string="/assets/temp_folder.png";
+
+  $:if (!item.folder)
+  {
+    itemIcon="/assets/temp_file.png";
+  }
 </script>
 
 <div class={cx("row item",topClass)}>
   <div class="col status-col"></div>
   <div class="col name-col">
     <div class="slot icon-slot folder-arrow">
-      <img src="/assets/temp_folderarrow2.png" alt="folder-arrow" class="folder-arrow-icon"/>
+      {#if item.folder}
+        <img src="/assets/temp_folderarrow2.png" alt="folder-arrow" class="folder-arrow-icon"/>
+      {/if}
     </div>
     <div class="slot icon-slot">
-      <img src="/assets/temp_folder.png" alt="folder"/>
+      <img src={itemIcon} alt="folder"/>
     </div>
     <div class="slot name-slot">{item.name}</div>
   </div>
