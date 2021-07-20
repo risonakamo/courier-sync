@@ -11,6 +11,10 @@ states rows can be in
 - ~~status icon~~
 
 # more changes
-- arrows showing the direction of change
+- match padding on header size/modified text, check paddings on other things to see if they should share
 - highlight the problem in modified error state
-- open folder/closed folder
+- open folder/closed folder icon
+
+# more changes 2
+- arrows showing the direction of change
+    - maybe not? not really enough space??

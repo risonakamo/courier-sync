@@ -3,9 +3,11 @@
 
   import "./MirrorDiffRow.less";
 
+  // --- props ---
   export var item:MirrorItem;
   export var expanded:boolean;
 
+  // --- render ---
   const topClass={
     modified:item.status=="modified",
     "error-modified":item.status=="errorModified",
