@@ -8,7 +8,8 @@
 
   const topClass={
     modified:item.status=="modified",
-    "error-modified":item.status=="errorModified"
+    "error-modified":item.status=="errorModified",
+    added:item.status=="added"
   };
 </script>
 

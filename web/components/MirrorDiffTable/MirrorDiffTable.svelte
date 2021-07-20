@@ -51,6 +51,22 @@
         mirror:"2021/07/15 20:30",
         base:"2021/07/15 20:00"
       }
+    },
+    {
+      name:"added item 1",
+      folder:false,
+      level:1,
+
+      status:"added",
+
+      modifiedSizes:{
+        mirror:"",
+        base:"5.0 mb"
+      },
+      modifiedDates:{
+        mirror:"",
+        base:"2021/07/15 20:00"
+      }
     }
   ];
 </script>

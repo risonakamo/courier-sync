@@ -1,11 +1,7 @@
+@import (reference) "./status-states.less";
+
 // tempcolour
 @normal-hover-background: #ffeebf;
-
-@modified-text: #dad316;
-@modified-background: #f5d93f;
-
-@error-modified-text: #dd6724;
-@error-modified-background: #d08c47;
 
 .mirror-diff-table
 {
@@ -46,27 +42,7 @@
                 }
             }
 
-            &.modified
-            {
-                color: @modified-text;
-                background: fade(@modified-background,5%);
-
-                &:hover
-                {
-                    background: fade(@modified-background,8%);
-                }
-            }
-
-            &.error-modified
-            {
-                color: @error-modified-text;
-                background: fade(@error-modified-background,10%);
-
-                &:hover
-                {
-                    background: fade(@error-modified-background,13%);
-                }
-            }
+            .status-states();
         }
     }
 }
