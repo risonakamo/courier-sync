@@ -1,4 +1,6 @@
 <script lang="ts">
+  import "./MirrorDiffRow.less";
+
   export var item:MirrorItem;
   export var expanded:boolean;
 </script>

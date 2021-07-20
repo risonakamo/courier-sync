@@ -7,7 +7,10 @@
     {
       name:"folder",
       folder:true,
+      level:0,
+
       status:"normal",
+
       modifiedSizes:{
         mirror:"200.7 kb",
         base:""

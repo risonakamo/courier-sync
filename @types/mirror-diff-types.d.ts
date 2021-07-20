@@ -1,8 +1,8 @@
 interface MirrorItem
 {
     name:string
-
     folder:boolean
+    level:number
 
     status:DiffStatus
 
