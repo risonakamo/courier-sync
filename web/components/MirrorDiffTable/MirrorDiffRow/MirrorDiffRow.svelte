@@ -47,7 +47,7 @@
   <div class="col status-col">{statusIcon}</div>
 
   <div class="col name-col">
-    {#each {length:item.level} as x}
+    {#each {length:item.level} as _}
       <div class="slot icon-slot"></div>
     {/each}
 
