@@ -94,8 +94,8 @@
       <div class="slot icon-slot"></div>
       <div class="slot name-slot">Name</div>
     </div>
-    <div class="col size-col">Size</div>
-    <div class="col modified-col">Modified</div>
+    <div class="col size-col divided-col">Size</div>
+    <div class="col modified-col divided-col">Modified</div>
   </div>
 
   {#each sampleData as x}

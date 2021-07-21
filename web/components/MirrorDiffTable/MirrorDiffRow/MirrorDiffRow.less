@@ -2,6 +2,7 @@
 
 // tempcolour
 @normal-hover-background: #ffeebf;
+@error-modified-warning: #e2303d;
 
 .mirror-diff-table
 {
@@ -64,6 +65,16 @@
                 .status-col
                 {
                     font-size: 15px;
+                }
+            }
+
+            &.error-modified
+            {
+                .base-date
+                {
+                    color: @error-modified-warning;
+                    font-weight: 600;
+                    opacity: .8;
                 }
             }
         }

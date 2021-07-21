@@ -71,6 +71,6 @@
 
   <div class="col modified-col">
     <div class="slot divide-slot">{item.modifiedDates.mirror}</div>
-    <div class="slot divide-slot">{item.modifiedDates.base}</div>
+    <div class="slot divide-slot base-date">{item.modifiedDates.base}</div>
   </div>
 </div>
