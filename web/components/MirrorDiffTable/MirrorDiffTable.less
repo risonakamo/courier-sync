@@ -1,3 +1,7 @@
+// tempcolour
+@current-subheader: #2f53b0;
+@changed-subheader: #b7340e;
+
 .mirror-diff-table
 {
     .col
@@ -66,6 +70,27 @@
         {
             height: 30px;
             font-weight: 600;
+
+            &.mini-header
+            {
+                height: 15px;
+
+                .divide-slot
+                {
+                    font-size: 10px;
+                    opacity: .9;
+
+                    &.current
+                    {
+                        color: @current-subheader;
+                    }
+
+                    &.change
+                    {
+                        color: @changed-subheader;
+                    }
+                }
+            }
         }
     }
 }

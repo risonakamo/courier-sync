@@ -98,6 +98,20 @@
     <div class="col modified-col divided-col">Modified</div>
   </div>
 
+  <div class="row header mini-header">
+    <div class="col name-col"></div>
+
+    <div class="col size-col">
+      <div class="slot divide-slot current">CURRENT</div>
+      <div class="slot divide-slot change">CHANGE</div>
+    </div>
+
+    <div class="col modified-col">
+      <div class="slot divide-slot current">CURRENT</div>
+      <div class="slot divide-slot change">CHANGE</div>
+    </div>
+  </div>
+
   {#each sampleData as x}
     <MirrorDiffRow item={x} expanded={true}/>
   {/each}
