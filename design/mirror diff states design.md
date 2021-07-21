@@ -13,7 +13,7 @@ states rows can be in
 # more changes
 - ~~match padding on header size/modified text, check paddings on other things to see if they should share~~
 - ~~highlight the problem in modified error state~~
-- open folder/closed folder icon
+- ~~open folder/closed folder icon~~
 - small indicator below modified/size column headers to show which side is mirror and base
 - think about new recursive mirror diff items data structure
 

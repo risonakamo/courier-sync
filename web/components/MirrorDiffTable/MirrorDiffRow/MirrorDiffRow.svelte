@@ -17,13 +17,20 @@
     collapsed:!expanded
   };
 
+  // --- render folder or file ---
   var itemIcon:string="/assets/temp_folder.png";
 
-  $:if (!item.folder)
+  if (!item.folder)
   {
     itemIcon="/assets/temp_file.png";
   }
 
+  else if (expanded)
+  {
+    itemIcon="/assets/temp_folderopen.png"
+  }
+
+  // --- render status icon ---
   var statusIcon:string="";
 
   switch (item.status)

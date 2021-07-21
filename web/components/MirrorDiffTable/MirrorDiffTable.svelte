@@ -99,6 +99,6 @@
   </div>
 
   {#each sampleData as x}
-    <MirrorDiffRow item={x} expanded={false}/>
+    <MirrorDiffRow item={x} expanded={true}/>
   {/each}
 </div>
