@@ -19,8 +19,8 @@ interface ValueDiff
     mirror:string
 }
 
-/** recursive form of MirrorItems */
-interface MirrorItemR
+/** directory item information before mirroring occurs */
+interface PreMirrorItem
 {
     name:string
     folder:boolean
@@ -30,5 +30,5 @@ interface MirrorItemR
     parent:string
     parents:string[]
 
-    items:MirrorItemR[]
+    items:PreMirrorItem[]
 }

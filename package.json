@@ -2,7 +2,8 @@
   "name": "courier-sync",
   "version": "1.0.0",
   "scripts": {
-    "build": "webpack",
+    "build-backend":"tsc --project tsconfig-node.json",
+    "build-web": "webpack",
     "watch": "webpack --watch",
     "watch-svelte":"svelte-check --watch",
     "server": "node server/testserver.js"
