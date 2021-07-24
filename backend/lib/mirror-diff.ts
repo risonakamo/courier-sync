@@ -62,7 +62,18 @@ function getPreMirror(target:string,parent:string,parents:string[],
 /** given a target dir, get PreMirrorItem for all dirs/files in the target */
 function getPreMirrorBase(target:string):PreMirrorItem[]
 {
-    if (statSync(target).isFile())
+    var targetStats:Stats;
+    try
+    {
+        targetStats=statSync(target);
+    }
+
+    catch (err)
+    {
+        return [];
+    }
+
+    if (targetStats.isFile())
     {
         console.error(`attempted to call PreMirrorBase on file: ${target}`);
         throw "getPreMirrorBase: must call on directory";
@@ -84,5 +95,5 @@ export function test1()
 {
     // console.log(getPreMirror("C:/Users/ktkm2/Desktop/web/courier-sync/package.json","",[],"."));
     // console.dir(getPreMirror("C:/Users/ktkm2/Desktop/web/courier-sync/backend","",[],"."),{depth:null});
-    console.dir(getPreMirrorBase("C:/Users/ktkm2/Desktop/web/courier-sync/backend"),{depth:null});
+    console.dir(getPreMirrorBase("C:/Users/ktkm2/Desktop/web/courier-sync/backend2"),{depth:null});
 }
