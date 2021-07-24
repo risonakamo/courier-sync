@@ -59,8 +59,30 @@ function getPreMirror(target:string,parent:string,parents:string[],
     return initialPMI;
 }
 
+/** given a target dir, get PreMirrorItem for all dirs/files in the target */
+function getPreMirrorBase(target:string):PreMirrorItem[]
+{
+    if (statSync(target).isFile())
+    {
+        console.error(`attempted to call PreMirrorBase on file: ${target}`);
+        throw "getPreMirrorBase: must call on directory";
+    }
+
+    var dirItems:string[]=readdirSync(target);
+
+    return _.map(dirItems,(x:string):PreMirrorItem=>{
+        return getPreMirror(
+            join(target,x),
+            "",
+            [],
+            x
+        );
+    });
+}
+
 export function test1()
 {
-    console.log(getPreMirror("C:/Users/ktkm2/Desktop/web/courier-sync/package.json","",[],"."));
-    console.dir(getPreMirror("C:/Users/ktkm2/Desktop/web/courier-sync/backend","",[],"."),{depth:null});
+    // console.log(getPreMirror("C:/Users/ktkm2/Desktop/web/courier-sync/package.json","",[],"."));
+    // console.dir(getPreMirror("C:/Users/ktkm2/Desktop/web/courier-sync/backend","",[],"."),{depth:null});
+    console.dir(getPreMirrorBase("C:/Users/ktkm2/Desktop/web/courier-sync/backend"),{depth:null});
 }
