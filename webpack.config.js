@@ -52,7 +52,11 @@ module.exports={
             filename:"[name]-build.css"
         }),
 
-        new ForkTsCheckerWebpackPlugin(),
+        new ForkTsCheckerWebpackPlugin({
+            typescript:{
+                configFile:"tsconfig-web.json"
+            }
+        }),
         new WebpackBar()
 
         // new CopyPlugin([

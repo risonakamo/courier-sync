@@ -1,0 +1,21 @@
+{
+    "compilerOptions":{
+        "strict":true,
+        "outDir":"backend-build",
+        "lib":["dom","ESNext"],
+        "target":"ESNext",
+        "esModuleInterop":true,
+        "baseUrl":".",
+        "module":"commonjs",
+        "paths": {
+
+        }
+    },
+    "include":[
+        "**/*.d.ts",
+        "backend-lib/*.ts"
+    ],
+    "exclude":[
+        "node_modules"
+    ]
+}

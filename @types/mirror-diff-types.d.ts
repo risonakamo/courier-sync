@@ -18,3 +18,17 @@ interface ValueDiff
     base:string
     mirror:string
 }
+
+/** recursive form of MirrorItems */
+interface MirrorItemR
+{
+    name:string
+    folder:boolean
+
+    fullPath:string
+    relPath:string
+    parent:string
+    parents:string[]
+
+    items:MirrorItemR[]
+}
