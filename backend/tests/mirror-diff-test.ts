@@ -1,6 +1,8 @@
+import {test1} from "../lib/mirror-diff";
+
 function main()
 {
-    console.log("hello");
+    test1();
 }
 
 main();

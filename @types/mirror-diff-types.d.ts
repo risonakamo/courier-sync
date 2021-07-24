@@ -25,6 +25,9 @@ interface PreMirrorItem
     name:string
     folder:boolean
 
+    modified:number
+    size:number
+
     fullPath:string
     relPath:string
     parent:string
