@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "build-backend":"tsc --project tsconfig-node.json",
+    "test-mirror-diff":"npm run build-backend && node backend-build/tests/mirror-diff-test.js",
     "build-web": "webpack",
     "watch": "webpack --watch",
     "watch-svelte":"svelte-check --watch",
